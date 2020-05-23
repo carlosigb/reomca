@@ -13,7 +13,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  /*margin-bottom: 4rem;*/
+  margin-bottom: 4rem;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -24,20 +24,15 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  /*height: 24rem;*/
-  height: 360px;
+  height: 36rem;
 }
 
 .carousel-item > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 640px;
-/*  position: absolute;
+  position: absolute;
   top: 0;
-  left: 25%;
-  height: auto;
-*/}
+  left: 0;
+  min-height: 36rem;
+}
 
 .carousel-caption > h5 {
 font-weight: bold;
@@ -49,19 +44,32 @@ font-size: 28px;
   color: white;
 }
 
+.carousel-slide {
+  position: absolute;
+  height: 100px;
+  top: 20%;
+  background-color: rgba(67, 156, 91, 0.8);
+  z-index: 15;
+}
+
+h5.carousel-slide-text {
+  font-size: 60px;
+  color: white;
+  z-index: 20;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.marketing .col-lg-6 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
 .marketing h2 {
   font-weight: 400;
 }
-.marketing .col-lg-4 p {
+.marketing .col-lg-6 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
@@ -81,6 +89,11 @@ font-size: 28px;
   letter-spacing: -.05rem;
 }
 
+ul.two-cols {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -100,6 +113,17 @@ font-size: 28px;
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    /*margin-top: 7rem;*/
   }
+}
+
+/* Decrease the size of the carousel content */
+@media (max-width: 40em) {
+  .carousel-item {
+    height: 20rem;
+  }
+
+  .carousel-item > img {
+    min-height: 20rem;
+  }  
 }
