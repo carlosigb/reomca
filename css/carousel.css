@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 3rem;
+  /*padding-bottom: 3rem;*/
   color: #5a5a5a;
 }
 
@@ -48,7 +48,6 @@ font-size: 28px;
   position: absolute;
   height: 100px;
   top: 20%;
-  background-color: rgba(67, 156, 91, 0.8);
   z-index: 15;
 }
 
@@ -123,9 +122,16 @@ margin-right: 10px;
   .featurette-heading {
     font-size: 50px;
   }
+
 }
 
-@media (min-width: 62em) {
+
+/* Adjust heading text to screen size */
+@media (min-width: 55em) {
+
+  #compras-title::before {
+    content: "Compras de Material";
+  }
 
   #ventas-title::before {
     content: "Ventas de Material";
@@ -137,6 +143,11 @@ margin-right: 10px;
   }
 }
 
+@media (max-width: 55em) {
+
+  #compras-title::before {
+    content: "Compras";
+  }
 
   #ventas-title::before {
     content: "Ventas";
@@ -153,4 +164,6 @@ margin-right: 10px;
   .carousel-item > img {
     min-height: 20rem;
   }  
+
+
 }

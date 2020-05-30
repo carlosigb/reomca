@@ -7,6 +7,14 @@
 	background-color: #a6ada7;	
 }
 
+.carousel-slide {
+  background-color: rgba(67, 156, 91, 0.8);	
+}
+
 .content {
 	background-color: white;
+}
+
+.py-5 {
+  background-color: rgba(67, 156, 91, 0.4);
 }
