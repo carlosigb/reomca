@@ -99,6 +99,16 @@ ul.two-cols {
   -moz-columns: 2;
 }
 
+ul.plastic-list li {
+  list-style-type: none;
+}
+
+ul.plastic-list li:before {
+content: '\267B';
+margin-left: -20px;
+margin-right: 10px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
