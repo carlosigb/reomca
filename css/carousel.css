@@ -126,9 +126,22 @@ margin-right: 10px;
 }
 
 @media (min-width: 62em) {
+
+  #ventas-title::before {
+    content: "Ventas de Material";
+  }
+
+
   .featurette-heading {
     /*margin-top: 7rem;*/
   }
+}
+
+
+  #ventas-title::before {
+    content: "Ventas";
+  }
+
 }
 
 /* Decrease the size of the carousel content */
