@@ -13,6 +13,7 @@ body {
 
 /* Carousel base class */
 .carousel {
+  margin-top: 105px;    /* 80 px + margins */
   margin-bottom: 4rem;
 }
 
@@ -24,14 +25,14 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 36rem;
+  height: 52rem;
 }
 
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 36rem;
+  min-height: 52rem;
 }
 
 .carousel-caption > h5 {
@@ -156,6 +157,16 @@ margin-right: 10px;
 }
 
 /* Decrease the size of the carousel content */
+@media (max-width: 1200px) {
+  .carousel-item {
+    height: 30rem;
+  }
+
+  .carousel-item > img {
+    min-height: 30rem;
+  }  
+
+
 @media (max-width: 40em) {
   .carousel-item {
     height: 20rem;
