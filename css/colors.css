@@ -16,5 +16,18 @@
 }
 
 .py-5 {
-  background-color: rgba(67, 156, 91, 0.4);
+  background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.5)), url("../img/molido-fondo.JPG"); 
 }
+
+footer {
+	color: black;
+}
+
+footer a {
+	color: blue;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: blue;
+} 
