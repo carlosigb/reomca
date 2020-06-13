@@ -99,12 +99,14 @@ ul.two-cols {
   -moz-columns: 2;
 }
 
-ul.plastic-list li {
+ul.recycle-list li {
   list-style-type: none;
 }
 
-ul.plastic-list li:before {
+ul.recycle-list li:before {
 content: '\267B';
+color: green;
+font-size: 1.3em;
 margin-left: -20px;
 margin-right: 10px;
 }
