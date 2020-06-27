@@ -140,7 +140,6 @@ margin-right: 10px;
     content: "Ventas de Material";
   }
 
-
   .featurette-heading {
     /*margin-top: 7rem;*/
   }
@@ -154,6 +153,12 @@ margin-right: 10px;
 
   #ventas-title::before {
     content: "Ventas";
+  }
+
+  h5.carousel-slide-text {
+    font-size: 50px;
+    color: white;
+    z-index: 20;
   }
 
 }
