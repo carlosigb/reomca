@@ -28,6 +28,10 @@ body {
   height: 52rem;
 }
 
+.col-md-5 .carousel-item {
+  height: 300px;
+}
+
 .carousel-item > img {
   position: absolute;
   top: 0;
