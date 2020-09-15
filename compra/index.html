@@ -39,13 +39,13 @@
 					<a class="nav-link" href="../index.html">Inicio</a>					
 				</li>
         <li>
-          <a class="nav-link" href="#">Compras<span class="sr-only">(current)</span></a>          
+          <a class="nav-link active" href="#">Compras</a>          
         </li>
         <li>
           <a class="nav-link" href="../venta/index.html">Ventas</a>          
         </li>                
-				<li class = "nav-item dropdown active">
-					<a class="nav-link dropdown-toggle" href="#" id="serviciosDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+				<li class = "nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="serviciosDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios<span class="sr-only">(current)</span></a>
           <div class="dropdown-menu" aria-labelledby="serviciosDropdownMenuLink">
             <a class="dropdown-item" href="../molienda/index.html">Molienda</a>            
             <a class="dropdown-item" href="../empaque/index.html">Empaque</a>
@@ -64,17 +64,55 @@
 
 <!-- Carousel slides 
 ======================================================
+TODO: agregar foto de tarimas 
 -->
-<div id="carouselServicios" class="carousel slide" data-ride="carousel">
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-		  <img class="d-block w-100" src="img/gaylor-2.png" alt="First slide" width="100%">
-		  <div class="carousel-caption carousel-slide">
-		  	<h5 class="carousel-slide-text" id="compras-title">
-		  	</h5>
-		  </div>
-		</div>		
-	</div>
+<div id="carouselCompras" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselCompras" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselCompras" data-slide-to="1"></li>
+    <li data-target="#carouselCompras" data-slide-to="2"></li>
+    <li data-target="#carouselCompras" data-slide-to="3"></li>    
+  </ol> 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w100" src="img/coladas.JPG" alt="First slide" width="100%">
+      <div class="carousel-caption carousel-slide">
+        <h5 class="carousel-slide-text" id="compras-title">
+        </h5>
+      </div>      
+    </div>    
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/tarimas-madera-2.jpg" alt="Second slide">
+      <div class="carousel-caption carousel-slide">
+        <h5 class="carousel-slide-text" id="compras-title">
+        </h5>
+      </div>            
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/carton-2.jpg" alt="Third slide">
+      <div class="carousel-caption carousel-slide">
+        <h5 class="carousel-slide-text" id="compras-title">
+        </h5>
+      </div>            
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/patios.jpg" alt="Fourth slide">
+      <div class="carousel-caption carousel-slide">
+        <h5 class="carousel-slide-text" id="compras-title">
+        </h5>
+      </div>            
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselCompras" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselCompras" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
 </div>
 
 
@@ -85,41 +123,22 @@
 
     <hr class="featurette-divider">
     <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Contenedores <span class="text-muted">colapsables</span></h2>
-        <p class="lead">Compramos contenedores abatibles usados: 
-          <ul class="recycle-list">
-            <li>para moler</li>
-            <li>para reparar</li>
-            <li>completos en buenas condiciones</li>
-          </ul>
-    </p>  
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img class="featurette-image img-fluid mx-auto" src="img/tote.JPG" alt="colapsable">
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-    <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading">Compras <span class="text-muted">de plástico</span></h2>
         <p class="lead">Si tienes productos "scrap", ¡no los tires! Nosotros los reciclamos.
 				Podemos reciclar diferentes tipos de productos, incluyendo plásticos
 				en forma de: 
  			<ul class="recycle-list">
-				<li>volumen en pieza</li>
-				<li>purgas</li>
-				<li>extrusión</li>
-				<li>molido</li>
-				<li>material virgen</li>
-				<li>contenedor abatible</li>
+				<li><a href="#volumen-pieza">volumen en pieza</a></li>
+				<li><a href="#extrusion">extrusión</a></li>
+				<li><a href="#molido">molido y virgen</a></li>
+				<li><a href="#contenedor-colapsable">contenedor abatible</a></li>
 			</ul> 
 		</p> 	
       </div>
       <div class="col-md-5 cf" style="height:281px">
         <!-- <img class="featurette-image img-fluid mx-auto" src="img/contenedor.jpg" alt="en pieza" style="height: 255px; width: auto; padding-left: 33%;">	 -->
-        <img class="featurette-image img-fluid mx-auto" src="img/purga-2.jpg" alt="purga">
+        <img class="featurette-image img-fluid mx-auto" src="img/tote-pie.jpg" alt="purga">
         <img class="featurette-image img-fluid mx-auto" src="img/extrusion.jpg" alt="Scrap">
         <img class="featurette-image img-fluid mx-auto" src="img/molido.jpg" alt="molido">
         <img class="featurette-image img-fluid mx-auto" src="img/virgen-2.jpg" alt="virgen">
@@ -151,36 +170,97 @@
       </div>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider" id="volumen-pieza">
     <div class="row featurette">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Compras <span class="text-muted">de molido</span></h2>
-        <p class="lead">Compramos una gran variedad de plástico molido, incluyendo:
+        <h2 class="featurette-heading">Volumen <span class="text-muted">en pieza</span></h2>
+        <p class="lead">
+          <ul class="recycle-list">
+            <li>artículos de plástico</li>
+            <li>colada de plástico</li>
+            <li>material de empaque de plástico</li>
+            <li>bases de plástico para cajón 48x45</li>
+          </ul>
+    </p>  
+      </div>
+
+      <div class="col-md-5 cf" style="height:281px">
+        <!-- <img class="featurette-image img-fluid mx-auto" src="img/contenedor.jpg" alt="en pieza" style="height: 255px; width: auto; padding-left: 33%;">   -->
+        <img class="featurette-image img-fluid mx-auto" src="img/tele.JPG" alt="teles">
+        <img class="featurette-image img-fluid mx-auto" src="img/colada-plastico.jpg" alt="colada">
+        <img class="featurette-image img-fluid mx-auto" src="img/charola.jpg" alt="charola">
+        <img class="featurette-image img-fluid mx-auto" src="img/lamina-azul2.png" alt="charola">        
+      </div>
+
+<!--
+      <div class="col-md-5 order-md-1">
+        <img class="featurette-image img-fluid mx-auto" src="img/tote.JPG" alt="colapsable">
+      </div>
+-->      
+    </div>
+
+    <hr class="featurette-divider" id="extrusion">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-1">
+        <h2 class="featurette-heading">Extrusión</h2>
+        <p class="lead">
+          <ul class="recycle-list">
+            <li>en pieza</li>
+            <li>extruidas</li>
+          </ul>
+    </p>  
+      </div>
+      <div class="col-md-5 order-md-2">
+        <img class="featurette-image img-fluid mx-auto" src="img/extr-pieza.jpg" alt="extrusion-pieza">
+        <!-- agregar extrusion.jpg --> 
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider" id="molido">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Compras <span class="text-muted">de molido y virgen</span></h2>
+        <p class="lead">Compramos una gran variedad de plástico molido y virgen, incluyendo:
         	<ul class="two-cols recycle-list">
         		<li>PEAD</li>
-        		<li>PVC</li>
         		<li>PEBD</li>
         		<li>PP</li>
         		<li>PS</li>
-        		<li>PC - Policarbonato</li>        		
-        		<li>POM - Acetal</li>
-        		<li>PO - Noryl</li>
-        		<li>PA - Nylon</li>
+        		<li>PC</li>
+        		<li>PA</li>
         		<li>ABS</li>
-        		<li>PC/ABS</li>
-        		<li>PP</li>
-        		<li>PS</li>
+        		<li>PC/ABS FR</li>
+        		<li>PMMA</li>
         	</ul>
 		</p> 	
       </div>
       <div class="col-md-5 order-md-1">
-        <img class="featurette-image img-fluid mx-auto" src="img/molido-cristalino.JPG" alt="molido">
+        <img class="featurette-image img-fluid mx-auto" src="img/molido-blanco.JPG" alt="molido">
+        <!-- <img class="featurette-image img-fluid mx-auto" src="img/virgen-naranja.jpg" alt="molido">         -->
+      </div>
+    </div>
+
+    <hr class="featurette-divider" id="contenedor-colapsable">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-1">
+        <h2 class="featurette-heading">Contenedores <span class="text-muted">abatibles</span></h2>
+        <p class="lead">Compramos contenedores abatibles usados: 
+          <ul class="recycle-list">
+            <li>para moler</li>
+            <li>para reparar</li>
+            <li>completos en buenas condiciones</li>
+          </ul>
+    </p>  
+      </div>
+      <div class="col-md-5 order-md-2">
+        <img class="featurette-image img-fluid mx-auto" src="img/tote.JPG" alt="colapsable">
       </div>
     </div>
 
     <hr class="featurette-divider">
     <div class="row featurette">
-      <div class="col-md-7">
+      <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">Otros <span class="text-muted">reciclados</span></h2>
         <p class="lead">Tambien compramos otros productos, tales como:   
  			<ul class="recycle-list">
@@ -190,7 +270,7 @@
 			</ul> 
 		</p> 	
       </div>
-      <div class="col-md-5 cf3" style="height:300px">
+      <div class="col-md-5 cf3 order-md-1" style="height:300px">
         <!-- <img class="featurette-image img-fluid mx-auto" src="img/contenedor.jpg" alt="en pieza" style="height: 255px; width: auto; padding-left: 33%;">	 -->
         <img class="featurette-image img-fluid mx-auto" src="img/metales-varios-2.jpg" alt="metales">
         <img class="featurette-image img-fluid mx-auto" src="img/carton-2.jpg" alt="carton">

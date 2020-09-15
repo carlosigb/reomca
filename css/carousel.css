@@ -137,7 +137,7 @@ margin-right: 10px;
 @media (min-width: 55em) {
 
   #compras-title::before {
-    content: "Compras de Material";
+    content: "Compras";
   }
 
   #ventas-title::before {
