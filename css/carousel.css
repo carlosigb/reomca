@@ -35,9 +35,30 @@ body {
 .carousel-item > img {
   position: absolute;
   top: 0;
-  left: 0;
+/*  left: 0;*/
+  display: flex; /* Center image horizontally */
+  justify-content: center;
   min-height: 52rem;
 }
+
+.center-is-low > img {
+  position: absolute;
+  top: -11rem;
+}
+
+/* Add brown background to carousel images & slides */
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 1.00;
+  z-index: -1;
+}
+
 
 .carousel-caption > h5 {
 font-weight: bold;
@@ -176,7 +197,7 @@ margin-right: 10px;
   .carousel-item > img {
     min-height: 30rem;
   }  
-
+}
 
 @media (max-width: 40em) {
   .carousel-item {
@@ -186,6 +207,18 @@ margin-right: 10px;
   .carousel-item > img {
     min-height: 20rem;
   }  
+}
 
+/* Images with center slightly below image center */
+@media (max-width: 1200px) {
+  .center-is-low {
+    top: 8rem;
+  }
+}
+
+@media (max-width: 40em) {
+  .center-is-low {
+    top: 12rem;
+  }
 
 }
