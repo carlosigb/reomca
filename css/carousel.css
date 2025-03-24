@@ -46,6 +46,11 @@ body {
   top: -11rem;
 }
 
+.center-is-mid-high > img {
+  position: absolute;
+  top: 3rem;
+}
+
 /* Add brown background to carousel images & slides */
 .carousel-item::after {
   content: "";
